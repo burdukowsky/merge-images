@@ -17,6 +17,7 @@ async function work() {
     list,
     gap: 0,
     padding: 0,
+    col: list.length,
   })
   const buffer = merge.canvas.toBuffer();
   fse.outputFileSync(`./output/${Date.now()}.png`, buffer);
